@@ -8,7 +8,13 @@ module.exports = {
     extend: {
       fontFamily: {
         pattaya: ["Pattaya"],
+        varela: ["Varela Round"],
       },
+    },
+
+    screens: {
+      xsm: "400px",
+      // => @media (min-width: 640px) { ... }
     },
   },
   variants: {
