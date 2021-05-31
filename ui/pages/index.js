@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div>
-      <div>skdjfksdjfhdks</div>
+      <div className="mt-10">skdjfksdjfhdks</div>
     </div>
   );
 }

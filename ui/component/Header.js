@@ -1,12 +1,14 @@
 import style from "../styles/Header.module.css";
 function Header() {
   return (
-    <div className="flex border-gray-500 border justify-between px-3">
-      <div className="text-2xl font-archivo">Wadapala</div>
+    <div className="flex  align-middle justify-between px-3 py-3  bg-white shadow-md">
+      <div className="text-3xl font-pattaya ">Wadapala</div>
 
-      <div className="flex border-gray-500 border space-x-6">
-        <div>Login</div>
-        <div>Add Service</div>
+      <div className="flex justify-items-center space-x-5">
+        <div className="flex p-1 px-3 border-gray-500 border bg-yellow-600 bg-primary ">
+          Login
+        </div>
+        <div className="p-1 px-3 border-gray-500 border">Add Service</div>
       </div>
     </div>
   );

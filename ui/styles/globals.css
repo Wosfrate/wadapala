@@ -1,12 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
 @tailwind base;
 @tailwind components;
-
-@font-face {
-  font-family: "Archivo Narrow";
-  font-style: normal;
-  font-weight: 100;
-  src: local(""),
-    url("../public/font/ArchivoNarrow/ArchivoNarrow-Regular.ttf") format("ttf");
-}
-
 @tailwind utilities;
