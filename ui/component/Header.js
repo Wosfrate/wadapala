@@ -7,7 +7,7 @@ function Header() {
       </div>
 
       <div className="flex justify-items-center space-x-3 font-varel">
-        <div className="flex justify-center align-middle p-1 px-1 font-medium  bg-yellow-400 bg-primary shadow-md rounded-sm text-sm xsm:px-3 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-5">
+        <div className="flex justify-center align-middle p-1 px-1 font-medium  bg-yellow-400 bg-primary shadow-md rounded-sm text-sm xsm:px-3 xxsm:px-2 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-5">
           Login
         </div>
         <div className="p-1 px-1 font-medium shadow-md bg-yellow-400 bg-primary rounded-sm text-sm xsm:px-3 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-6">
