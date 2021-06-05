@@ -45,7 +45,7 @@ const cities = [
 export default function Home() {
   return (
     <div className="flex flex-col mt-20 xsm:mt-24 xl:mt-28 mb-5">
-      <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-2 rounded-sm bg-yellow-100 shadow-md ml-auto mr-auto">
+      <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-2 rounded-sm bg-blue-50 shadow-md ml-auto mr-auto">
         <SearchIcon className="h-5 w-5 text-gray-600" />
         <input
           className="border-none outline-none w-full bg-transparent font-varela ml-2"
@@ -54,15 +54,16 @@ export default function Home() {
         />
       </div>
 
-      <div className=" mt-8 ">
-        <div>
-          <div className="px-3 py-1 flex  items-center space-x-2 text-base font-varela">
-            <ArchiveIcon className="h-5 w-5 text-yellow-400" />
+      <div className=" mt-8 xl:flex xl:flex-row-reverse xl:justify-center ">
+        {/* 1st box */}
+        <div className="">
+          <div className="px-3 py-1 flex  items-center space-x-2 text-base font-varela mb-5">
+            <ArchiveIcon className="h-5 w-5 text-myBlue" />
             <p>Category</p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3  my-4 gap-y-5 xxsm:grid-cols-2 justify-items-center text-sm xxsm:text-base px-4 font-medium font-varela ">
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 max-w-xs">
+          <div className="grid grid-cols-2 lg:grid-cols-3 border-yellow-700 border xl:my-0  my-4 gap-y-10  xl:gap-x-5 xxsm:grid-cols-2 justify-items-center text-sm xxsm:text-base px-4 font-medium font-varela  max-w-2xl mr-auto ml-auto ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/tech.png"
                 width={30}
@@ -70,7 +71,7 @@ export default function Home() {
               />{" "}
               <p className="">Technician</p>
             </div>
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-1 ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/car.png"
                 width={60}
@@ -78,7 +79,7 @@ export default function Home() {
               />{" "}
               <p className="font-varela">Car Mechanic</p>
             </div>
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/tech.png"
                 width={30}
@@ -86,7 +87,7 @@ export default function Home() {
               />{" "}
               <p className="">Bike Mechanic</p>
             </div>
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/tech.png"
                 width={30}
@@ -94,7 +95,7 @@ export default function Home() {
               />{" "}
               <p className="">Plumber</p>
             </div>
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/tech.png"
                 width={30}
@@ -103,7 +104,32 @@ export default function Home() {
               <p className="">Electrician</p>
             </div>
 
-            <div className="h-20  bg-yellow-100 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 ">
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
+              <Image
+                src="/Images/categoryImages/tech.png"
+                width={30}
+                height={30}
+              />{" "}
+              <p className="">Carpenter</p>
+            </div>
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
+              <Image
+                src="/Images/categoryImages/tech.png"
+                width={30}
+                height={30}
+              />{" "}
+              <p className="">Plumber</p>
+            </div>
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
+              <Image
+                src="/Images/categoryImages/tech.png"
+                width={30}
+                height={30}
+              />{" "}
+              <p className="">Electrician</p>
+            </div>
+
+            <div className="h-20  bg-blue-50 flex flex-col items-center justify-center  w-4/5 shadow-md rounded-sm space-y-2 fsm:w-48">
               <Image
                 src="/Images/categoryImages/tech.png"
                 width={30}
@@ -113,22 +139,24 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-8">
-          <div className=" px-3 py-1 flex  items-center space-x-2 text-base font-varela">
-            <LocationMarkerIcon className="h-5 w-5 text-yellow-400" />
+
+        {/* 2nd box */}
+        <div className="mt-8 xl:mt-0 mr-10">
+          <div className=" px-3 py-1  flex  items-center space-x-2 text-base font-varela mb-5">
+            <LocationMarkerIcon className="h-5 w-5 text-myBlue" />
             <p>Pick your location below</p>
           </div>
 
-          <div className="">
+          <div className="xl:grid xl:grid-cols-3 gap-y-6  ">
             {cities.map((city) => {
               return (
                 <div
                   key={city}
-                  className="mx-4 my-2 bg-yellow-50 px-6 py-2 rounded-sm shadow-md flex justify-between text-sm items-center font-varela hover:bg-yellow-200 "
+                  className="mx-4 bg-blue-50   px-6 py-2 rounded-sm shadow-md flex justify-between text-sm items-center font-varela hover:bg-blue-200 "
                 >
                   {city}
                   {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                  <ChevronRightIcon className="h-5 w-5 text-gray-600" />
+                  <ChevronRightIcon className="h-5 w-5 text-gray-400" />
                 </div>
               );
             })}

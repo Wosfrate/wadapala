@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div className="border-t border-yellow-400 grid grid-cols-2 gap-4 gap-y-8 px-3 py-5 pt-8 lg:grid-cols-4 lg:gap-8 bg-yellow-400">
+      <div className="border-t border-myBlue grid grid-cols-2 gap-4 gap-y-8 px-3 py-5 pt-8 lg:grid-cols-4 lg:gap-8 bg-myBlue text-white">
         <div>
           <div className="text-xl font-pattaya ">About Us</div>
           <div>
@@ -42,7 +42,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="text-xs font-bold font-varela flex justify-center py-6  bg-yellow-400">
+      <div className="text-xs font-bold font-varela flex justify-center py-6  bg-myBlue text-white">
         {" "}
         ©MAANA SRI LANKA | All RIGHTS RESERVED
       </div>
