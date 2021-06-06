@@ -12,7 +12,7 @@ function Layout({ children }) {
     menu = <HamburgerMenu setState={setshowMenu} />;
   }
   return (
-    <div>
+    <div className="bg-gray-100">
       {menu}
       <Header setState={setshowMenu} show={showMenu} />
       {/* <Header setMenuStatus={[showMenu, setshowMenu]} /> */}

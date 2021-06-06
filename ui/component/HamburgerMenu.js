@@ -6,9 +6,9 @@ function HamburgerMenu(props) {
         onClick={() => {
           props.setState(false);
         }}
-        className="bg-black opacity-50 w-2/4 h-full"
+        className="bg-black opacity-50 w-5/12 h-full"
       ></div>
-      <div className="p-2 w-2/4 bg-myBlue">
+      <div className="p-2 w-7/12 bg-myBlue">
         <Image
           src="/Images/svg/cancel.svg"
           width={20}

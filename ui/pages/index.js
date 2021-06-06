@@ -48,7 +48,7 @@ const cities = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col mt-24 xsm:mt-24 xl:mt-36 mb-5">
+    <div className="flex flex-col pt-24 xsm:pt-24 xl:pt-36 pb-5">
       <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-2 rounded-md  shadow-md ml-auto mr-auto bg-myBlue group">
         <SearchIcon className="h-5 w-5 text-white " />
         <input
@@ -66,7 +66,7 @@ export default function Home() {
             <p>Category</p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3  xl:my-0  my-4 gap-y-10  xl:gap-x-5 xxsm:grid-cols-2 justify-items-center text-sm xxsm:text-base px-4 font-medium font-varela  max-w-2xl mr-auto ml-auto bg-gray-100 py-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3  xl:my-0  my-4 gap-y-10  xl:gap-x-5 xxsm:grid-cols-2 justify-items-center text-sm xxsm:text-base px-4 font-medium font-varela  max-w-2xl mr-auto ml-auto ">
             <div className="h-28 bg-white   hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48 ">
               <Image
                 src="/Images/categoryImages/tech.png"
@@ -177,12 +177,12 @@ export default function Home() {
             <p>Pick your location below</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-y-3 xl:grid xl:grid-cols-3 xl:gap-y-8 bg-gray-100 py-5 ">
+          <div className="grid grid-cols-1 gap-y-3 xl:grid xl:grid-cols-3 xl:gap-y-8 ">
             {cities.map((city) => {
               return (
                 <div
                   key={city}
-                  className="mx-4 px-6 py-2 rounded-md shadow-md flex justify-between text-sm items-center font-varela hover:bg-myBlue hover:text-white group bg-white"
+                  className="mx-4 px-6 py-2 rounded-md shadow-md flex justify-between text-sm items-center font-varela hover:bg-myBlue hover:text-white group bg-white cursor-pointer"
                 >
                   {city}
                   {/* <FontAwesomeIcon icon={faArrowRight} /> */}
