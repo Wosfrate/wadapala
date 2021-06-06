@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div className="border-t border-myBlue grid grid-cols-2 gap-4 gap-y-8 px-3 py-5 pt-8 lg:grid-cols-4 lg:gap-8 bg-myBlue text-white">
+      <div className="border-t border-myBlue grid grid-cols-2 gap-4 gap-y-8 px-3 py-5 pt-8 lg:grid-cols-4 lg:gap-8 bg-myBlue text-white mt-32">
         <div>
           <div className="text-xl font-pattaya ">About Us</div>
           <div>
