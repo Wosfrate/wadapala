@@ -1,4 +1,4 @@
-package models;
+package com.maana.wadapala.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,6 +14,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "cities")
 public class CityModel {
     @Id
-    private int id;
+    private String id;
     private String city;
 }

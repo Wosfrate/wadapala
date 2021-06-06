@@ -1,7 +1,7 @@
-package repositories;
+package com.maana.wadapala.repositories;
 
 
-import models.CityModel;
+import com.maana.wadapala.models.CityModel;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
