@@ -3,27 +3,21 @@ import Image from "next/image";
 import { white } from "tailwindcss/colors";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
-function Header() {
-  const [showMenu, setshowMenu] = useState(false);
-
-  var menu;
-
-  if (showMenu) {
-    menu = <HamburgerMenu />;
-  }
+function Header(props) {
+  console.log(props);
 
   return (
     <div className="flex items-center justify-between px-2 py-3 bg-myBlue shadow-md xxl:px-5 xxl:py-4 fixed top-0 w-full z-20">
       <div className="text-2xl font-pattaya xsm:text-3xl xl:text-5xl text-white">
         Wadapala
       </div>
-      {menu}
+
       <div
         onClick={() => {
-          if (showMenu) {
-            setshowMenu(false);
+          if (props.show) {
+            props.setState(false);
           } else {
-            setshowMenu(true);
+            props.setState(true);
           }
         }}
         className="flex justify-items-center space-x-3 font-varel"
