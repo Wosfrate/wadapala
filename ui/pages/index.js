@@ -48,8 +48,8 @@ const cities = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col mt-20 xsm:mt-24 xl:mt-36 mb-5">
-      <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-6 rounded-md  shadow-md ml-auto mr-auto bg-myBlue group">
+    <div className="flex flex-col mt-24 xsm:mt-24 xl:mt-36 mb-5">
+      <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-2 rounded-md  shadow-md ml-auto mr-auto bg-myBlue group">
         <SearchIcon className="h-5 w-5 text-white " />
         <input
           className="border-none outline-none w-full bg-transparent placeholder-white font-varela ml-2  text-white"
