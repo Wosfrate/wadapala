@@ -18,35 +18,45 @@ import {
   LocationMarkerIcon,
   ArchiveIcon,
 } from "@heroicons/react/solid";
+import { useEffect, useState } from "react";
+import axios from "../service/axios";
 
-const cities = [
-  "Anuradhapura",
-  "Kurunegala",
-  "Kandy",
-  "Galle",
-  "Colombo",
-  "Mathara",
+// const cities = [
+//   "Anuradhapura",
+//   "Kurunegala",
+//   "Kandy",
+//   "Galle",
+//   "Colombo",
+//   "Mathara",
 
-  "Anuradhapura",
-  "Kurunegala",
-  "Kandy",
-  "Galle",
-  "Colombo",
-  "Mathara",
+//   "Anuradhapura",
+//   "Kurunegala",
+//   "Kandy",
+//   "Galle",
+//   "Colombo",
+//   "Mathara",
 
-  "Anuradhapura",
-  "Kurunegala",
-  "Kandy",
-  "Galle",
-  "Colombo",
-  "Mathara",
-  "Anuradhapura",
-  "Kurunegala",
-  "Kandy",
-  "Galle",
-];
+//   "Anuradhapura",
+//   "Kurunegala",
+//   "Kandy",
+//   "Galle",
+//   "Colombo",
+//   "Mathara",
+//   "Anuradhapura",
+//   "Kurunegala",
+//   "Kandy",
+//   "Galle",
+// ];
 
 export default function Home() {
+  const [cities, setcities] = useState([]);
+
+  useEffect(() => {
+    axios.get("/").then((res) => {
+      setcities(res.data);
+    });
+  }, []);
+
   return (
     <div className="flex flex-col pt-24 xsm:pt-24 xl:pt-36 pb-5">
       <div className="flex w-4/5 lg:max-w-screen-md lg:py-4 lg:px-3 justify-center items-center  px-2 py-2 rounded-md  shadow-md ml-auto mr-auto bg-myBlue group">
@@ -181,10 +191,10 @@ export default function Home() {
             {cities.map((city) => {
               return (
                 <div
-                  key={city}
+                  key={city.id}
                   className="mx-4 px-6 py-2 rounded-md shadow-md flex justify-between text-sm items-center font-varela hover:bg-myBlue hover:text-white group bg-white cursor-pointer"
                 >
-                  {city}
+                  {city.city}
                   {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                   <ChevronRightIcon className="h-5 w-5 text-gray-400 group-hover:text-white" />
                 </div>
