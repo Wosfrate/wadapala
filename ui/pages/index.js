@@ -87,95 +87,52 @@ export default function Home() {
             </div>
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/car.png"
-                width={60}
+                src="/Images/categoryImages/car2.png"
+                width={50}
                 height={30}
               />{" "}
               <p className="font-varela">Car Mechanic</p>
             </div>
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
+                src="/Images/categoryImages/bike.png"
+                width={60}
                 height={30}
               />{" "}
               <p className="">Bike Mechanic</p>
             </div>
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
+                src="/Images/categoryImages/plumber.png"
+                width={60}
+                height={60}
               />{" "}
               <p className="">Plumber</p>
             </div>
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
+                src="/Images/categoryImages/mechanic.png"
+                width={80}
+                height={60}
               />{" "}
               <p className="">Electrician</p>
             </div>
 
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
+                src="/Images/categoryImages/carpenter.png"
+                width={60}
+                height={60}
               />{" "}
               <p className="">Carpenter</p>
             </div>
             <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
               <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
+                src="/Images/categoryImages/teacher.png"
+                width={60}
+                height={60}
               />{" "}
-              <p className="">Plumber</p>
-            </div>
-            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
-              <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
-              />{" "}
-              <p className="">Electrician</p>
-            </div>
-
-            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
-              <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
-              />{" "}
-              <p className="">Carpenter</p>
-            </div>
-
-            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
-              <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
-              />{" "}
-              <p className="">Plumber</p>
-            </div>
-            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
-              <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
-              />{" "}
-              <p className="">Electrician</p>
-            </div>
-
-            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
-              <Image
-                src="/Images/categoryImages/tech.png"
-                width={30}
-                height={30}
-              />{" "}
-              <p className="">Carpenter</p>
+              <p className="">Teacher</p>
             </div>
           </div>
         </div>
