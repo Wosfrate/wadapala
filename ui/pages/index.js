@@ -21,41 +21,41 @@ import {
 import { useEffect, useState } from "react";
 import axios from "../service/axios";
 
-// const cities = [
-//   "Anuradhapura",
-//   "Kurunegala",
-//   "Kandy",
-//   "Galle",
-//   "Colombo",
-//   "Mathara",
+const cities = [
+  "Anuradhapura",
+  "Kurunegala",
+  "Kandy",
+  "Galle",
+  "Colombo",
+  "Mathara",
 
-//   "Anuradhapura",
-//   "Kurunegala",
-//   "Kandy",
-//   "Galle",
-//   "Colombo",
-//   "Mathara",
+  "Anuradhapura",
+  "Kurunegala",
+  "Kandy",
+  "Galle",
+  "Colombo",
+  "Mathara",
 
-//   "Anuradhapura",
-//   "Kurunegala",
-//   "Kandy",
-//   "Galle",
-//   "Colombo",
-//   "Mathara",
-//   "Anuradhapura",
-//   "Kurunegala",
-//   "Kandy",
-//   "Galle",
-// ];
+  "Anuradhapura",
+  "Kurunegala",
+  "Kandy",
+  "Galle",
+  "Colombo",
+  "Mathara",
+  "Anuradhapura",
+  "Kurunegala",
+  "Kandy",
+  "Galle",
+];
 
 export default function Home() {
-  const [cities, setcities] = useState([]);
+  // const [cities, setcities] = useState([]);
 
-  useEffect(() => {
-    axios.get("/").then((res) => {
-      setcities(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("/").then((res) => {
+  //     setcities(res.data);
+  //   });
+  // }, []);
 
   return (
     <div className="flex flex-col pt-24 xsm:pt-24 xl:pt-36 pb-5">
@@ -134,6 +134,14 @@ export default function Home() {
               />{" "}
               <p className="">Teacher</p>
             </div>
+            <div className="h-28 bg-white  hover:bg-myBlue hover:text-white p-2  flex flex-col items-center justify-center  w-4/5 shadow-md rounded-md space-y-2 fsm:w-48">
+              <Image
+                src="/Images/categoryImages/welder.png"
+                width={50}
+                height={60}
+              />{" "}
+              <p className="">Welder</p>
+            </div>
           </div>
         </div>
 
@@ -144,7 +152,7 @@ export default function Home() {
             <p>Pick your location below</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-y-3 xl:grid xl:grid-cols-3 xl:gap-y-8 ">
+          {/* <div className="grid grid-cols-1 gap-y-3 xl:grid xl:grid-cols-3 xl:gap-y-8 ">
             {cities.map((city) => {
               return (
                 <div
@@ -152,7 +160,22 @@ export default function Home() {
                   className="mx-4 px-6 py-2 rounded-md shadow-md flex justify-between text-sm items-center font-varela hover:bg-myBlue hover:text-white group bg-white cursor-pointer"
                 >
                   {city.city}
-                  {/* <FontAwesomeIcon icon={faArrowRight} /> */}
+
+                  <ChevronRightIcon className="h-5 w-5 text-gray-400 group-hover:text-white" />
+                </div>
+              );
+            })}
+          </div> */}
+
+          <div className="grid grid-cols-1 gap-y-3 xl:grid xl:grid-cols-3 xl:gap-y-8 ">
+            {cities.map((city) => {
+              return (
+                <div
+                  key={city}
+                  className="mx-4 px-6 py-2 rounded-md shadow-md flex justify-between text-sm items-center font-varela hover:bg-myBlue hover:text-white group bg-white cursor-pointer"
+                >
+                  {city}
+
                   <ChevronRightIcon className="h-5 w-5 text-gray-400 group-hover:text-white" />
                 </div>
               );
