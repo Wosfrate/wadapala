@@ -12,17 +12,17 @@ function Header(props) {
         Wadapala
       </div>
 
-      <div
-        onClick={() => {
-          if (props.show) {
-            props.setState(false);
-          } else {
-            props.setState(true);
-          }
-        }}
-        className="flex justify-items-center space-x-3 font-varel"
-      >
-        <div className="flex md:hidden justify-center align-middle p-1 px-1 font-medium  bg-myBlue text-white   shadow-md rounded-sm text-sm xxsm:py-2 xxsm:px-3 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-5">
+      <div className="flex justify-items-center space-x-3 font-varel ">
+        <div
+          onClick={() => {
+            if (props.show) {
+              props.setState(false);
+            } else {
+              props.setState(true);
+            }
+          }}
+          className="flex md:hidden justify-center align-middle p-1 px-1 font-medium  bg-myBlue text-white   shadow-md rounded-sm text-sm xxsm:py-2 xxsm:px-3 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-5"
+        >
           <Image src="/Images/svg/menu.svg" width={20} height={20} />
         </div>
         <div className="hidden md:flex justify-center align-middle p-1 px-1 font-medium  bg-myBlue text-white  border-white border  shadow-md rounded-sm text-sm xxsm:py-2 xxsm:px-3 xsm:p-2 xsm:text-base xxl:p-2 xxl:px-5">
